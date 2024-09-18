@@ -27,3 +27,8 @@
      ``` kubectl port-forward svc/netology-svc 3003:3002 ```
 
 ![изображение](https://github.com/user-attachments/assets/4404e385-55e7-4ee3-8dd8-35e3ef034cdf)
+
+Выводы команд:
+
+![изображение](https://github.com/user-attachments/assets/a318a0db-3752-4bec-8c38-6c7f86dd83a8)
+
