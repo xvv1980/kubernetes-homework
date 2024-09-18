@@ -14,4 +14,11 @@
 
 ## Задание 2
 
+  - Создать Pod netology-web с образом gcr.io/kubernetes-e2e-test-images/echoserver:2.2
 
+[манифест](pod-web.yaml)
+
+
+  - Подключиться локально к Service с помощью kubectl port-forward и вывести значение (curl или в браузере).
+
+     ``` kubectl port-forward svc/netology-svc 3003:3002 ```
