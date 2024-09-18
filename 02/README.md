@@ -18,7 +18,12 @@
 
 [манифест](pod-web.yaml)
 
+  - Создать Service с именем netology-svc и подключить к netology-web.
+
+[манифест](svc-netology.yaml)
 
   - Подключиться локально к Service с помощью kubectl port-forward и вывести значение (curl или в браузере).
 
      ``` kubectl port-forward svc/netology-svc 3003:3002 ```
+
+![изображение](https://github.com/user-attachments/assets/4404e385-55e7-4ee3-8dd8-35e3ef034cdf)
