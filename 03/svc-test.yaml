@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: test-svc
+spec:
+  selector:
+    app: test-app
+  ports:
+    - protocol: TCP
+      port: 3001     
+      targetPort: 8080
+      name: mult-port
+    - protocol: TCP
+      port: 3002     
+      targetPort: 80
+      name: nginx-port
