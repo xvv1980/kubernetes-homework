@@ -21,6 +21,11 @@
 
 [service манифест](svc-test.yaml)
 
+![изображение](https://github.com/user-attachments/assets/900bae58-b96a-4b5c-b827-f5bf535b2ade)
+
   - Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложений из п.1.
 
 [pod манифест](pod-multitool.yaml)
+
+![изображение](https://github.com/user-attachments/assets/5e19ccf0-60d1-4f07-b0a5-ff4c3801fedb)
+
