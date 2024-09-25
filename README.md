@@ -4,9 +4,16 @@
 
 [deployment манифест](deployment.yaml)
 
-Проблема решена путем добавления переменной окружения HTTP_PORT в контейнер с multitool.
+<b> Проблема решена путем добавления переменной окружения HTTP_PORT в контейнер с multitool. </b>
 
+  - Запуск с 1-й репликой:
+    
+  ![изображение](https://github.com/user-attachments/assets/8a8f4153-540a-4f13-94b1-c4168b9cbef4)
+
+  
   - После запуска увеличить количество реплик работающего приложения до 2.
+
+![изображение](https://github.com/user-attachments/assets/6c68b96b-5d5c-4232-aef1-fd8d8adc9ab1)
 
 
 
