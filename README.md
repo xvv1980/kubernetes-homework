@@ -29,3 +29,6 @@
 
 ![изображение](https://github.com/user-attachments/assets/5e19ccf0-60d1-4f07-b0a5-ff4c3801fedb)
 
+![изображение](https://github.com/user-attachments/assets/23997f7c-5ba3-46db-8982-13e08aca9329)
+
+
