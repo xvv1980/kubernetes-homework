@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-init-test
+spec:
+  selector:
+    app: test-init-app
+  ports:
+    - protocol: TCP
+      port: 3001     
+      targetPort: 80
+      name: nginx-port
