@@ -38,9 +38,10 @@
 [deployment манифест](deploy-with-init.yaml)
 
   - Убедиться, что nginx не стартует. В качестве Init-контейнера взять busybox.
-  
+  ![изображение](https://github.com/user-attachments/assets/f13aa441-acb0-4fb0-add7-896b2d75599f)
   
   - Создать и запустить Service. Убедиться, что Init запустился.
+![изображение](https://github.com/user-attachments/assets/6457239d-0fe9-4534-9a0f-3f9f3e67dce6)
 
 
 
