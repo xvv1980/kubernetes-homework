@@ -22,4 +22,4 @@ spec:
       initContainers:
       - name: init-wait-service
         image: busybox:1.28
-        command: ['sh', '-c', "until nslookup svc-init-test; do echo waiting for myservice; sleep 2; done"]
+        command: ['sh', '-c', "until nslookup svc-init-test; do echo waiting for svc-init-test; sleep 2; done"]
