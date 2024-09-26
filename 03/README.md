@@ -43,7 +43,7 @@
   
   - Создать и запустить Service. Убедиться, что Init запустился.
 
-[deployment манифест](svc-init-test.yaml)
+[service манифест](svc-init-test.yaml)
 
 ![изображение](https://github.com/user-attachments/assets/6457239d-0fe9-4534-9a0f-3f9f3e67dce6)
 
