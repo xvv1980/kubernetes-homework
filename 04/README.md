@@ -17,3 +17,19 @@
 
     ![изображение](https://github.com/user-attachments/assets/5d50610d-3de0-424c-9cd2-5b63ee46d00d)
 
+
+## Задание 2
+  - Создать Service и обеспечить доступ к приложениям снаружи кластера
+  - Создать отдельный Service приложения из Задания 1 с возможностью доступа снаружи кластера к nginx, используя тип NodePort.
+
+     [service манифест](svc-04-nodeport.yaml)
+
+  - Продемонстрировать доступ с помощью браузера или curl с локального компьютера.
+  - Поднята виртауалка в облаке
+    ![изображение](https://github.com/user-attachments/assets/0d37ce69-f138-439f-a107-5af41fed4b02)
+
+  - Обращаемся с домашнего на ВМ с micro8ks
+    ![изображение](https://github.com/user-attachments/assets/d11125e2-8af8-4ee2-8368-2fd9110e1958)
+
+    ![изображение](https://github.com/user-attachments/assets/97f39e83-f69d-491c-832c-9c187468616c)
+
