@@ -23,3 +23,11 @@
 
 ## Задание 2
  
+  - Включить Ingress-controller в MicroK8S.
+
+    ![изображение](https://github.com/user-attachments/assets/d76606a0-8ef1-4bb4-8d83-186a2d5e9a63)
+
+  - Создать Ingress, обеспечивающий доступ снаружи по IP-адресу кластера MicroK8S так, чтобы при запросе только по адресу открывался frontend а при добавлении /api - backend.
+
+[ingress манифест](ingress.yaml)
+     
