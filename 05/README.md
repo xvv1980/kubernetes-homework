@@ -1,50 +1,33 @@
-### Домашнее задание к занятию «Запуск приложений в K8S»
+### Домашнее задание к занятию «Сетевое взаимодействие в K8S. Часть 2»
 ## Задание 1
-  - Создать Deployment приложения, состоящего из двух контейнеров — nginx и multitool. Решить возникшую ошибку.
+  - Создать Deployment приложения frontend из образа nginx с количеством реплик 3 шт.
 
-[deployment манифест](deployment.yaml)
+[deployment манифест](deploy-front.yaml)
 
-<b> Проблема решена путем добавления переменной окружения HTTP_PORT в контейнер с multitool. </b>
 
-  - Запуск с 1-й репликой:
+  - Создать Deployment приложения backend из образа multitool.
     
-  ![изображение](https://github.com/user-attachments/assets/8a8f4153-540a-4f13-94b1-c4168b9cbef4)
+[deployment манифест](deploy-back.yaml)
 
   
-  - После запуска увеличить количество реплик работающего приложения до 2.
+  - Добавить Service, которые обеспечат доступ к обоим приложениям внутри кластера.
 
-![изображение](https://github.com/user-attachments/assets/6c68b96b-5d5c-4232-aef1-fd8d8adc9ab1)
+[service для backend манифест](svc-back.yaml)
 
-Продемонстрировать количество подов до и после масштабирования.
+[service для frontend манифест](svc-front.yaml)
 
-  - Создать Service, который обеспечит доступ до реплик приложений из п.1.
-
-[service манифест](svc-test.yaml)
-
-![изображение](https://github.com/user-attachments/assets/900bae58-b96a-4b5c-b827-f5bf535b2ade)
-
-  - Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложений из п.1.
-
-[pod манифест](pod-multitool.yaml)
-
-![изображение](https://github.com/user-attachments/assets/5e19ccf0-60d1-4f07-b0a5-ff4c3801fedb)
-
-![изображение](https://github.com/user-attachments/assets/23997f7c-5ba3-46db-8982-13e08aca9329)
+  - Продемонстрировать, что приложения видят друг друга с помощью Service.
+ 
+![изображение](https://github.com/user-attachments/assets/36c1d100-fcb0-4a7f-9ed5-346339c573f9)
 
 
 ## Задание 2
-  - Создать Deployment и обеспечить старт основного контейнера при выполнении условий
+ 
+  - Включить Ingress-controller в MicroK8S.
 
-[deployment манифест](deploy-with-init.yaml)
+    ![изображение](https://github.com/user-attachments/assets/d76606a0-8ef1-4bb4-8d83-186a2d5e9a63)
 
-  - Убедиться, что nginx не стартует. В качестве Init-контейнера взять busybox.
-  
-  
-  - Создать и запустить Service. Убедиться, что Init запустился.
+  - Создать Ingress, обеспечивающий доступ снаружи по IP-адресу кластера MicroK8S так, чтобы при запросе только по адресу открывался frontend а при добавлении /api - backend.
 
-
-
-
-Продемонстрировать состояние пода до и после запуска сервиса.
-
-
+[ingress манифест](ingress.yaml)
+     
