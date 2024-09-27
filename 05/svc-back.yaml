@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-back
+spec:
+  selector:
+    app: app-back
+  ports:
+    - protocol: TCP
+      port: 80     
+      name: mtool-port
