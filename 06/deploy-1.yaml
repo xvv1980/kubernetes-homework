@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-vol
+  labels:
+    app: test-vol
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-vol
+  template:
+    metadata:
+      labels:
+        app: test-vol
+    spec:
+      containers:
+      - name: busybox
+        image: busybox
+        command: ['sh', '-c', 'while true; do watch -n 5 date >> /test-volume/output.txt; sleep 5; done']
+        volumeMounts:
+          - mountPath: /test-volume
+            name: volume
+      - name: multitool
+        image: wbitt/network-multitool
+        volumeMounts:
+          - mountPath: /test-volume
+            name: volume
+        env:
+        - name: HTTP_PORT
+          value: "8080"
+        ports:
+        - containerPort: 8080
+      volumes:
+      - name: volume
+        emptyDir: {}
