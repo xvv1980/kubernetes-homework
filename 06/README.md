@@ -40,9 +40,9 @@
       - name: volume
         hostPath: 
            path: /var/log/syslog
-   ```
+       ```
    - Продемонстрировать возможность чтения файла изнутри пода.
   Поднимаем DaemonSet, подклчюаемся к контейнеру и проверяем наличие смонтированой директории с файлом.
    
-![изображение](https://github.com/user-attachments/assets/644cfa91-78dc-4b87-bff2-95b9e37d8e7d)
+  ![изображение](https://github.com/user-attachments/assets/644cfa91-78dc-4b87-bff2-95b9e37d8e7d)
 
