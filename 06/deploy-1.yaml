@@ -17,7 +17,7 @@ spec:
       containers:
       - name: busybox
         image: busybox
-        command: ['sh', '-c', 'while true; do watch -n 5 date >> /test-volume/output.txt; sleep 5; done']
+        command: ['sh', '-c', 'while true; do echo "test" >> /test-volume/output.txt; sleep 5; done;']
         volumeMounts:
           - mountPath: /test-volume
             name: volume
