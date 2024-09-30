@@ -26,4 +26,21 @@
 
    ![изображение](https://github.com/user-attachments/assets/f4dbeafd-1be2-4400-a237-3029c87d145f)
 
- 
+ ### Задание 2
+ Создать DaemonSet приложения, которое может прочитать логи ноды.
+
+   - Создать DaemonSet приложения, состоящего из multitool.
+
+      [deployment манифест](deploy-2.yaml)
+     
+   - Обеспечить возможность чтения файла /var/log/syslog кластера MicroK8S.
+       ```
+   Для этих целей будем использовать локальный volume типа hostPath
+       volumes:
+      - name: volume
+        hostPath: 
+           path: /var/log/syslog
+   ```
+   - Продемонстрировать возможность чтения файла изнутри пода.
+   
+
