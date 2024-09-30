@@ -31,7 +31,7 @@
 
    - Создать DaemonSet приложения, состоящего из multitool.
 
-      [deployment манифест](deploy-2.yaml)
+      [DaemonSet манифест](deploy-2.yaml)
      
    - Обеспечить возможность чтения файла /var/log/syslog кластера MicroK8S.
        ```
@@ -42,5 +42,7 @@
            path: /var/log/syslog
    ```
    - Продемонстрировать возможность чтения файла изнутри пода.
+  Поднимаем DaemonSet, подклчюаемся к контейнеру и проверяем наличие смонтированой директории с файлом.
    
+![изображение](https://github.com/user-attachments/assets/644cfa91-78dc-4b87-bff2-95b9e37d8e7d)
 
