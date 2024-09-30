@@ -9,7 +9,7 @@
    
  - Сделать так, чтобы busybox писал каждые пять секунд в некий файл в общей директории.
 
-   ``` command: ['sh', '-c', 'while true; do watch -n 5 date >> /test-volume/output.txt; sleep 5; done']```
+   ``` command: ['sh', '-c', 'while true; do echo "test" >> /test-volume/output.txt; sleep 5; done;']```
 
  - Обеспечить возможность чтения файла контейнером multitool.
 
