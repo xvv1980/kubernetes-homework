@@ -5,9 +5,9 @@ metadata:
 spec:
   storageClassName: ""
   capacity:
-    storage: 500Mb
+    storage: 500M
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: /home/xvv1980/pv
+    path: /tmp/pv
   persistentVolumeReclaimPolicy: Delete
