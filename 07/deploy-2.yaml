@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-pvc
+  labels:
+    app: test-pvc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-pvc
+  template:
+    metadata:
+      labels:
+        app: test-pvc
+    spec:
+      containers:
+      - name: multitool
+        image: wbitt/network-multitool
+        volumeMounts:
+          - mountPath: /test-pvc
+            name: volume
+        env:
+        - name: HTTP_PORT
+          value: "8080"
+        ports:
+        - containerPort: 8080
+      volumes:
+      - name: volume
+        persistentVolumeClaim:
+          claimName: pvc-nfs-test
