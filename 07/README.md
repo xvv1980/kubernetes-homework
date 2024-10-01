@@ -57,5 +57,18 @@
       [PersistentVolumeClame манифест](pvc-nfs.yaml)
     
     - Продемонстрировать возможность чтения и записи файла изнутри пода.
-  
+
+      Поднимаем наш pvc, создается атоматически pv
+      
+      ![изображение](https://github.com/user-attachments/assets/14105092-d657-4f22-8e35-7892220f17b0)
+
+      Поднимаем pod и создаем файл в общем volume
+
+      ![изображение](https://github.com/user-attachments/assets/1222a3d2-008f-4a12-90ef-75d65f66e89c)
+
+      Проверяем на node nfs каталог и видим что файл с содержимым на месте
+      
+      ![изображение](https://github.com/user-attachments/assets/67c9225a-5397-4810-858d-ba5f6c97a430)
+
+
 
