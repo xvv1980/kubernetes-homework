@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deploy-front
+  name: deploy-nginx
   labels:
-    app: app-front
+    app: app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: app-front
+      app: app
   template:
     metadata:
       labels:
-        app: app-front
+        app: app
     spec:
       containers:
       - name: nginx
