@@ -12,7 +12,7 @@
     Проблема - это работа двух контейнеров на одно м и том же порту 80. Решать ее будем переопределив переменную окружения HTTP_PORT
     через ConfigMap.
 
-     [deployment ConfigMap](conf_map.yaml)
+     [ConfigMap манифест](conf_map.yaml)
 
   - Продемонстрировать, что pod стартовал и оба конейнера работают.
 
@@ -21,7 +21,17 @@
   
   - Сделать простую веб-страницу и подключить её к Nginx с помощью ConfigMap.
 
+    Описываем содержимое страницы в ConfigMap.
+
   - Подключить Service и показать вывод curl или в браузере.
+    [svc манифест](svc.yaml)
+
+    ![изображение](https://github.com/user-attachments/assets/a888e596-e74d-4ce0-9fea-9948de8088eb)
+
+
+    ![изображение](https://github.com/user-attachments/assets/7be42025-3dcb-4454-9e42-a0a78c82f182)
+
+
 
 
 
