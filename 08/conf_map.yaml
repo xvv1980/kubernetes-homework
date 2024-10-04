@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-test
+data:
+  HTTP_PORT: '8080'
+  index.html: |
+     Test configMap
