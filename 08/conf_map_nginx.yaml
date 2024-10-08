@@ -6,20 +6,5 @@ data:
   index.html: |
      Test configMaps ssl
 
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: config-test-conf 
-data:
-  default.conf: |
-   server {
-   listen 80;
-   server_name xvv1980.com;
-
-   location / {
-     root /usr/share/nginx/html;
-    }
-    }
 
   
