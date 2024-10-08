@@ -40,11 +40,21 @@
 
    - Создать собственную веб-страницу и подключить её как ConfigMap к приложению.
 
-     Описываем содержимое страницы в ConfigMap.  [ConfigMap манифест](conf_map_nginx.yaml)
+     Описываем содержимое страницы в ConfigMap.
+[ConfigMap манифест](conf_map_nginx.yaml)
 
    - Выпустить самоподписной сертификат SSL. Создать Secret для использования сертификата.
-     
+     C помощью утилиты openssl был выпушен сертификат. В итоге имеем два файла:
 
+     ![изображение](https://github.com/user-attachments/assets/6137ec75-64c9-4133-ae01-b78d6224d0bf)
+
+     Создаем secret типа tls и указываем файлы сертификата:
+
+     ```kubectl create secret tls ssl-conf2 --cert=tls.crt --key=tls.key
+
+     Проверяем
+
+     ![изображение](https://github.com/user-attachments/assets/2815d790-d1c2-41c3-9493-e91f4e30650e)
 
    - Создать Ingress и необходимый Service, подключить к нему SSL в вид. Продемонстировать доступ к приложению по HTTPS.
    
