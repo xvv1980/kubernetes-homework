@@ -50,13 +50,17 @@
 
      Создаем secret типа tls и указываем файлы сертификата:
 
-     ```kubectl create secret tls ssl-conf2 --cert=tls.crt --key=tls.key
+     ```kubectl create secret tls ssl-conf2 --cert=tls.crt --key=tls.key```
 
      Проверяем
 
      ![изображение](https://github.com/user-attachments/assets/2815d790-d1c2-41c3-9493-e91f4e30650e)
 
    - Создать Ingress и необходимый Service, подключить к нему SSL в вид. Продемонстировать доступ к приложению по HTTPS.
+
+     [Ingress манифест](ingress.yaml)
+
+     [Service манифест](svc-nginx.yaml)
    
 
 
