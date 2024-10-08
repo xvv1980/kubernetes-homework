@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-test
+data:
+  HTTP_PORT: '8080'
+  index.html: |
+     Test configMaps
+  default.conf: |
+   server {
+   listen 80;
+   server_name mysite.com;
+
+   location / {
+     root /usr/share/nginx/html;
+    }
+  
