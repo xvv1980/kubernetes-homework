@@ -61,6 +61,9 @@
      [Ingress манифест](ingress.yaml)
 
      [Service манифест](svc-nginx.yaml)
+
+     ![изображение](https://github.com/user-attachments/assets/d01e8cff-f4f4-462e-b444-1ea793df32b1)
+
    
 
 
