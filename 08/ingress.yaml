@@ -5,8 +5,9 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  ingressClassName: nginx
   rules:
-  - host:
+  - host: xvv1980.com
     http:
       paths:
       - path: /
@@ -15,7 +16,7 @@ spec:
           service:
             name: svc-nginx
             port:
-              number: 443
+              number: 80
   tls: 
   - hosts: 
     - xvv1980.com

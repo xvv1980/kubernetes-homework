@@ -31,6 +31,8 @@
 
     ![изображение](https://github.com/user-attachments/assets/7be42025-3dcb-4454-9e42-a0a78c82f182)
 
+    kubectl create secter
+
 
 
 

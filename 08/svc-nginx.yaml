@@ -9,6 +9,3 @@ spec:
     - protocol: TCP
       port: 80     
       name: nginx-port
-    - protocol: TCP
-      port: 443    
-      name: ssh-port
