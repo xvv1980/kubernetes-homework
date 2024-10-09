@@ -23,10 +23,23 @@
 
   - Создайте роли и все необходимые настройки для пользователя.
 
+    * Применяем мнифесты ролей и связываний
+
     [Манифест Role](role.yaml)
     
     [Манифест Role-Bindings](role-binding.yaml)
-  
-  - Предусмотрите права пользователя. Пользователь может просматривать логи подов и их конфигурацию (kubectl logs pod <pod_id>, kubectl describe pod <pod_id>).
+
+    * Переключаем контекст
+    * Проверем установленные ограничения(Предусмотрите права пользователя. Пользователь может просматривать логи подов и их конфигурацию (kubectl logs pod <pod_id>, kubectl describe pod <pod_id>).)
+    * Работа команды describe
+
+      ![изображение](https://github.com/user-attachments/assets/6c239fc3-1fda-47a7-b850-4025b0ba2a31)
+
+    * Работа команды logs
+      ![изображение](https://github.com/user-attachments/assets/5acfb07a-6c02-42fa-8235-7f06dc05ee22)
+
+    * Работа не допустимых команд
+      ![изображение](https://github.com/user-attachments/assets/ed2b00b0-e03d-47ae-a043-4f7c23664018)
+
     
 
