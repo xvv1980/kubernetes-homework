@@ -1,0 +1,10 @@
+08/tls.crt
+08/tls.key
+09/ca.crt
+09/ca.key
+09/ca.srl
+09/config
+09/kuber.crt
+09/kuber.csr
+09/kuber.key
+09/openssl
