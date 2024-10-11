@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-back
+  labels:
+    app: {{ .Values.application.backend.label}}
+spec:
+  replicas: {{ .Values.application.backend.replicas}}
+  selector:
+    matchLabels:
+      app: {{ .Values.application.backend.label}}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.application.backend.label}}
+    spec:
+      containers:
+      - name: {{ .Values.application.backend.name }}
+        image: {{ .Values.application.backend.image}}:{{ .Values.application.backend.version}}
