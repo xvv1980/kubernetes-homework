@@ -37,8 +37,31 @@
     
 - Третью версию в namespace=app2.
     
-    
+  ![изображение](https://github.com/user-attachments/assets/321acd01-5e41-425a-bb92-edeeb322894f)
+
     
 - Продемонстрируйте результат.
+
+  ПОДЫ, СЕРВИСЫ
+
+![изображение](https://github.com/user-attachments/assets/13743a30-1cd3-4db1-85be-0d8564bf00fa)
+
+
+
+![изображение](https://github.com/user-attachments/assets/21b3b3d1-878b-4bc2-a48d-922bb6b50aee)
+
+Вывод из приложения одного окружения
+
+![изображение](https://github.com/user-attachments/assets/16587f98-9110-4a1a-a794-8d58a296ad43)
+
+Вывод из приложения другого окружения
+
+![изображение](https://github.com/user-attachments/assets/50dd8c11-3301-4ca3-b05a-a14e31e2f022)
+
+Вывод из приложения третьего окружения
+
+![изображение](https://github.com/user-attachments/assets/61eaf948-e36b-4d1f-b445-6ff3e0ef4a70)
+
+
 
 
