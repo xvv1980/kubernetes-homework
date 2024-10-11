@@ -8,3 +8,6 @@
 09/kuber.csr
 09/kuber.key
 09/openssl
+10/get_helm.sh
+10/name-app1.yaml
+10/name-app2.yaml
