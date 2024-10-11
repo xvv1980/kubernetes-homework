@@ -3,7 +3,7 @@ application:
           name:  multitool
           image: wbitt/network-multitool
           version: latest
-          replicas: 3
+          replicas: 1
           label: app-back
       frontend:
           name: nginx
@@ -14,8 +14,10 @@ application:
 services:
       backend:
           name: svc-back
+          port: 30001
       frontend:
           name: svc-front
+          port: 30002
           
 
 

@@ -1,0 +1,9 @@
+application:
+      backend:
+         version: 1.14.1
+
+services:
+      backend:
+          port: 30701
+      frontend:
+          port: 30702

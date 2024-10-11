@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deploy-back
+  name: deploy-back-{{ .Values.application.frontend.version | replace "." "-"}}
   labels:
     app: {{ .Values.application.backend.label}}
 spec:

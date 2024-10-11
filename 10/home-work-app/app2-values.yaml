@@ -1,0 +1,5 @@
+services:
+      backend:
+          port: 30801
+      frontend:
+          port: 30802
